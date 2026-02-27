@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Form Pendaftaran Sederhana</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <table border="0">
+            <tr>
+                <td>
+                    <label for="username">Nama:</label>
+                    <input type="text" name="username" required minlength="4" maxlength="13">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Jenis Kelamin:</label>
+                    <label><input type="radio" name="gender" value="Laki-laki">Laki-laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hobi">Hobi:</label>
+                    <label><input type="checkbox" name="Hobi" value="Bernyanyi">Bernyanyi<label>
+                    <label><input type="checkbox" name="Hobi" value="Menulis">Menulis</label>                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="kota">Pilih Kota: </label>
+                    <select name="kota" id="kota">
+                        <option value="1">Jakarta</option>
+                        <option value="2">Bekasi</option>
+                        <option value="3">Depok</option>
+                    </select>                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="file">Upload Foto: <input type="file" name="file" accept="image/*"></label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="alert('Berhasil!')">Daftar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
