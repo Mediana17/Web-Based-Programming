@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Sederhana</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Formulir Pendaftaran</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendaftar.</p><br>
+
+            <form action="index.html" method="post">
+
+                <label for="nama"><strong>Nama Lengkap:</strong></label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+
+                <label for="email"><strong>Email:</strong></label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <div class="section">
+                <label for="password"><strong>Password:</strong></label>
+                <input type="password" id="password" name="password"><br>
+                </div>
+
+                <div class="section">
+                <label><strong>Jenis Kelamin:</strong></label>
+                <label>
+                    <input type="radio" name="kelamin" value="laki-laki"> Laki-laki
+                </label>
+                <label>
+                    <input type="radio" name="kelamin" value="perempuan"> Perempuan
+                </label>
+                </div>
+
+                <div class="section">
+                <label><strong>Hobi:</strong></label>
+                <label>
+                    <input type="checkbox" name="hobi" value="musik"> Musik
+                </label>
+                <label>
+                    <input type="checkbox" name="hobi" value="olahraga"> Tidur
+                </label>
+                <label>
+                    <input type="checkbox" name="hobi" value="membaca"> Membaca
+                </label>
+                </div><br>
+
+                <label for="kota"><strong>Pilih Kota:</strong></label><br>
+                <select id="kota" name="kota">
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="medan">Medan</option>
+                </select><br><br>
+
+                <label for="pesan"><strong>Pesan Tambahan:</strong></label><br>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan di sini..."></textarea><br><br>
+
+                <button type="submit" onclick="alert('Formulir berhasil dikirim!')" class="btn">Kirim</button>
+            </form>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Halaman Web Sederhana. Dibuat dengan HTML dan CSS.</p>
+    </footer>
+
+</body>
+</html>
